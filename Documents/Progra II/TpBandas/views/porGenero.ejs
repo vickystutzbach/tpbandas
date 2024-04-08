@@ -1,0 +1,14 @@
+<%- include('./partials/head') %>
+<main>
+    <h1><%= mensaje %></h1>
+    <ul>
+        <%  for( let i = 0; i < lista.length; i++ ) { %>
+            <li> <a href="/bandas/<%= lista[i].id %>">
+                <%= lista[i].nombre %>
+            </a></li>
+            <% }  
+            %>
+    </ul>
+</main>
+
+<%- include('./partials/footer') %>

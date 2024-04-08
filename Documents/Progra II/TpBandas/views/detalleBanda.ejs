@@ -1,0 +1,15 @@
+<%- include('./partials/head') %>
+<main>
+    <h1><%= mensaje %></h1>
+    <ul>
+        <li>Nombre: <%= lista.nombre %> </li>
+        <li>Genero: <a href="/bandas/genero/<%= lista.genero %>">
+            <%= lista.genero %>
+        </a> </li>
+        <li>Integrantes: <%= lista.integrantes %> </li>
+        <li>Top Canciones: <%= lista.topCanciones %> </li>
+        <li><img src="<%= lista.cover %>" ></li>
+    </ul>
+</main>
+
+<%- include('./partials/footer') %>
